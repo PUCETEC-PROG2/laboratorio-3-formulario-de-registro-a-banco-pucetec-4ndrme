@@ -11,16 +11,49 @@
     <h1>Laboratorio 3 - PUCE Banco</h1>
     <p>Bienvenido al laboratorio 3 del curso de Desarrollo de Aplicaciones Web. En este laboratorio, implementaremos una
         aplicación web para un banco ficticio llamado PUCE Banco.</p>
-    <h2>Nombre del estudiante: Michael QUinatoa </h2>
+    <h2>Nombre del estudiante: Michael Quinatoa </h2>
 
     <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input id="nombre" name="nombre" type="text" placeholder="Nombre del cliente" required />
-
-        <label for="apellidoPaterno">Apellido Paterno:</label>
-        <input id="apellidoPaterno" name="apellidoPaterno" type="text" placeholder="Apellido paterno del cliente"
-            required />
-
+        <!--Campo 1-->
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Nombre del cliente" required />
+        </div>
+        <!--Campo 2-->
+        <div>
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input id="apellidoPaterno" name="apellidoPaterno" type="text" placeholder="Apellido paterno del cliente"
+                required />
+        </div>
+        <div>
+            <button type="submit">Confirmar</button>
+        </div>
+        <!--Campo 3-->
+        <div>
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input id="apellidoMaterno" name="apellidoMaterno" type="text" placeholder="Apellido materno del cliente"
+                required />
+        </div>
+        <!--Campo 4-->
+        <div>
+            <label for="cedula">Número de cédula:</label>
+            <input id="cedula" name="cedula" type="text" placeholder="Número de cédula del cliente" required />
+        </div>
+        <!--Campo 5-->
+        <div>
+            <label for="motivo">Motivo de apertura de cuenta:</label><br />
+            <textarea id="motivo" name="motivo" rows="4" cols="40"
+                placeholder="Motivo de apertura de cuenta del cliente" required></textarea>
+        </div>
+        <!--Campo 6-->
+        <div>
+            <label for="tipoCuenta">Tipo de cuenta:</label>
+            <select id="tipoCuenta" name="tipoCuenta" required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="Ahorros">Ahorros</option>
+                <option value="Corriente">Corriente</option>
+            </select>
+        </div>
     </form>
 </body>
 
